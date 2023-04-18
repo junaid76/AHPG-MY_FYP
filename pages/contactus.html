@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html  lang="eng">
+   <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="theme-color" content="#3196F3">
+  <title>AHSG</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="manifest" href="/manifest.json">
+            <!--ios support-->
+  <link rel="apple-touch-icon" href="/images/PNG/logo9696.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+  
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   
+</head>
+    <body>
+
+     <!---Navbar start-->
+
+      <nav class="blue " role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img class="imagelogo" src="/images/Asset 2 1.png"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/index.html">Home</a></li>
+          <li class="logged-in" style="display: none;"><a href="modal-login"  data-target="modal-login" class="btn-small blue hoverable modal-trigger">Sign In</a></li>
+          <li class="logged-out" style="display: none;"><a href="#"  class="btn-small blue hoverable logout">LogOut</a></li>
+                    <li class="logged-out" style="display: none;" ><a href="#"  data-target="modal-paramedic" id="logout" class="btn-small blue hoverable modal-trigger">Paramedic</a></li>
+
+      </ul>
+       
+
+      <ul id="nav-mobile" class="blue sidenav">
+        <li><a class="text" href="/index.html" >Home</a></li>
+                   <li class="logged-in" style="display: none;"><a href="modal-login"  data-target="modal-login" class="btn-small blue hoverable modal-trigger">Sign In</a></li>
+          <li class="logged-out" style="display: none;"><a href="#"  class="btn-small blue hoverable logout">LogOut</a></li>
+                    <li class="logged-out" style="display: none;" ><a href="#"  data-target="modal-paramedic" id="logout" class="btn-small blue hoverable modal-trigger">Paramedic</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+       </nav>
+
+           <!---Navbar End-->
+             <!-----Modal start-->
+        <div id="modal-login" class="modal"> 
+    <div class="modal-content">
+      <h4 style="text-align: center;font-weight: bold;">Log In</h4>
+      <form id="login-form">
+                 <div class="input-field col s6">
+
+           <input id="email" type="text" class="validate">
+
+          <label for="first_name">Username</label>
+
+        </div>
+
+        <div class="input-field col s6">
+
+          <input id="password" type="password" class="validate">
+
+          <label for="last_name">Password</label>
+
+        </div>
+
+    </div>
+
+    <div class="modal-footer">
+
+     <!--<a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>--> 
+
+     <a href="#" style="text-decoration: underline;">forgot pawword?Clickhere</a>
+
+     <button href="#" class="waves-effect blue waves-light btn-small hoverable" type="submit">Login</button>
+
+     <button href="/pages/registrationform.html" class="waves-effect blue waves-light btn-small hoverable" type="submit">SignUp</button>
+
+      </form>
+    </div>
+  </div>
+                                          <!-----Modal End-->
+
+                                
+
+             <!--register btn content   start-->
+
+    
+    <div class="container row  ">
+     
+      <div class="col s12 m6">
+        <h2 > CONTACT US</h2>
+        
+        <p>Email us <b> junaidmalik7754@gmail.com</b> with any question or inquiries or call/whatsapp <b class="number">
+             03467422498,03055289531</b>.We would be happy
+             to answer your questions and set up meeting with you
+         </p>
+
+      </div>
+         <div class="col s12 m6">
+        <img class="imagehealth2 responsive-img" src="/images/PNG/health2.png">
+
+      </div>
+         <div class="container">
+             <form class="col s12" id="contactform">
+                    <div class="row">
+                      <div class="input-field col s12">
+                      <input id="name" type="text" class="validate">
+                      <label for="last_name">Name</label>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                      <input id="emailaddress" type="email" class="validate">
+                      <label for="last_name">Email Address</label>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                      <input id="subject" type="text" class="validate">
+                      <label for="last_name">Subject</label>
+                    </div>
+                       <div class="row">
+            <div class="input-field col s12">
+         <div class="input-field">
+          
+           <input type="datetime-local" id="datetimec" name="daytime" required />
+             </div>
+            </div>
+          </div>
+          <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="message" class="materialize-textarea"></textarea>
+          <label for="icon_prefix2">Message</label>
+        </div>
+      </div>
+
+             </form> 
+                 
+      
+          </div>
+
+      
+  
+      <div class="row center col s12"> 
+        <button type="submit" href="#" data-target="modal6"  id="send" class="btn-large  waves-light blue hoverable modal-trigger  ">Send</button> 
+      
+    </div>
+  </div>     
+
+
+     <!-- Paramedic modal popup sign in first -->
+  <div id="modal6" class="modal">
+    <div class="modal-content">
+      <h4>MESSAGE</h4>
+      <p>Your Request Has Been Submitted Our Paramedic will contact you soon through your whatsapp No that you provided in form!</p>
+    </div>
+    <div class="modal-footer">
+      <a href="index1.html" class="btn blue modal-close waves-effect  btn-flat">BackToHome</a>
+    </div>
+  </div>
+
+                           <!--paramedics and labs registration-->
+
+
+
+
+                                         <!--register btn content End-->
+
+
+
+                                                <!--Footer start-->
+
+  <footer class="page-footer blue">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <a id="logo-container" href="#" class="brand-logo"><img class="imagelogo" src="/images/Asset 2 1.png"></a>
+          <br>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Company</h5>
+          <ul>
+            <li><a class="white-text" href="#!">About Us</a></li>
+            <li><a class="white-text" href="/pages/contactus.html">Contact Us</a></li>
+            <li><a class="white-text" href="#!">Services</a></li>
+            
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">HelpfulLinks</h5>
+          <ul>
+            <li><a class="white-text" href="/pages/ourteam.html">Our Team</a></li>
+            <li><a class="white-text" href="/pages/termandcondition.html">Terms&Conditions</a></li>
+            <li><a class="white-text" href="/pages/privacypolicy.html">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class=" container">
+      copyright@ <a class="orange-text text-lighten-3" href="http://materializecss.com">AlliedHealthServices2021</a>
+      </div>
+    </div>
+  </footer>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-funtions.js"></script> -->
+
+<script>
+
+ var firebaseConfig = {
+    apiKey: "AIzaSyCj9GuNL09BagKySNGlQ04ZbiAexUqiglU",
+    authDomain: "alliedhealthservices-fee6a.firebaseapp.com",
+    databaseURL: "https://alliedhealthservices-fee6a-default-rtdb.firebaseio.com",
+    projectId: "alliedhealthservices-fee6a",
+    storageBucket: "alliedhealthservices-fee6a.appspot.com",
+    messagingSenderId: "1005602570512",
+    appId: "1:1005602570512:web:8f80598925daf2ded96595",
+    measurementId: "G-G1MTTJJZFL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+
+  const send = document.getElementById('send');
+const Contact = document.getElementById('contactform');
+//const Lab = document.getElementById('lab');
+//const Test = document.getElementById('test');
+const name = document.getElementById('name');
+const email = document.getElementById('emailaddress');
+const subject = document.getElementById('subject');
+const DateTime = document.getElementById('datetimec');
+const Message = document.getElementById('message');
+//const Location = document.getElementById('demo');
+
+
+
+
+
+    send.addEventListener( 'click', (e) =>{
+    e.preventDefault();
+database.ref('/contactus/'+emailaddress.value).set({
+    Name:name.value,
+  
+    email:emailaddress.value,
+    Subject:subject.value,
+   
+    DateTime:datetimec.value,
+    Message:message.value
+    
+    
+
+});
+
+    // Contact.reset();
+   
+    console.log('Request submitted');
+    // window.location = '/pages/userfallback.html';
+    
+
+});
+
+</script>
+
+
+
+
+
+                      <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/ui.js"></script>
+      <script src="/js/auth.js"></script>
+    <script src="/js/index.js"></script>
+      <script src="/js/db.js"></script>
+  
+  
+    
+
+    </body>
+
+</html>

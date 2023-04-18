@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html  lang="eng">
+   <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="theme-color" content="#3196F3">
+  <title>AHSG</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="manifest" href="/manifest.json">
+            <!--ios support-->
+  <link rel="apple-touch-icon" href="/images/PNG/logo9696.png">
+  <link rel="icon" 
+      type="image/png" 
+      href="/images/PNG/logo9696.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+  
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+   
+</head>
+    <body>
+
+     <!---Navbar start-->
+
+      <nav class="blue " role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img class="imagelogo" src="/images/Asset 2 1.png"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+         <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="logged-out" style="display: none;" ><a href="modal-login"  data-target="modal-login" class="btn-small blue hoverable modal-trigger">Sign In</a></li>
+          <li class="logged-in" style="display: none;" ><a href="#"  class="btn-small blue hoverable logout">LogOut</a></li>
+          <li class="logged-out" style="display: none;" ><a href="#"  data-target="modal-paramedic" id="logout" class="btn-small blue hoverable modal-trigger">Paramedic</a></li>
+<!-- style="display: none;" -->
+      </ul>
+       
+
+      <ul id="nav-mobile" class="blue sidenav">
+        <li><a class="text" href="/index.html" >Home</a></li>
+         <li><a class="text" href="#services" >Services</a></li>
+          <li><a class="text" href="#about">About</a></li>
+          <li class="logged-out" style="display: none;" ><a href="modal-login"   data-target="modal-login" class="btn-small blue hoverable modal-trigger">Sign In</a></li>
+          <li class="logged-in" style="display: none;" ><a href="#"  class="btn-small blue hoverable logout">LogOut</a></li>
+           <li class="logged-out" style="display: none;" ><a href="#" data-target="modal-paramedic" id="logout" class="btn-small blue hoverable modal-trigger">Paramedic</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+       </nav>
+
+           <!---Navbar End-->
+
+                                
+
+
+
+
+                                      <!-- SIGN UP MODAL -->
+  <div id="modal-signup" class="modal">
+    <div class="modal-content">
+      <h4>Sign up</h4><br />
+      <form id="signup-form">
+        <div class="input-field">
+          <input type="email" id="signup-email" required />
+          <label for="signup-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="signup-password" required />
+          <label for="signup-password">Choose password</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="confirm-password" required />
+          <label data-error="Password not match" data-success="Password Match" for="signup-password">Confirm password</label>
+        </div>
+        <button class="btn blue  darken-2 z-depth-0">Sign up</button>
+      </form>
+    </div>
+  </div>
+
+   <!-- LOGIN MODAL -->
+  <div id="modal-login" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4><br />
+      <form id="login-form">
+        <div class="input-field">
+          <input type="email" id="login-email" required />
+          <label for="login-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="login-password" required />
+          <label for="login-password">Your password</label>
+        </div>
+        <button class="btn blue  darken-2 z-depth-0">Login</button>
+      </form>
+    </div>
+  </div>
+
+
+                                        <!-- paramedic MODAL -->
+  <div id="modal-paramedic" class="modal">
+    <div class="modal-content">
+      <h4>Paramedic</h4><br />
+      <form id="paramedic-form">
+        <div class="input-field">
+          <input type="text" id="fullnamep" required />
+          <label for="signup-email">Full Name</label>
+        </div>
+        <div class="input-field">
+          <input type="number" id="phonenop" required />
+          <label for="phoneno">PhoneNo</label>
+        </div>
+        <div class="input-field">
+          <textarea id="addressp" class="materialize-textarea" required></textarea>
+          <label for="address">Address</label>
+        </div>
+         <div class="row">
+              <div class="input-field col s12">
+              <select type="text" id="diploma" >
+      <option value="" disabled selected>select your Diploma</option>
+      <option value="1">O.T.T</option>
+      <option value="2">Lab Tech.</option>
+      <option value="3">Xray Tech.</option>
+        <option value="4">Dispenser</option>
+      <option value="5">Dresser</option>
+      <option value="6">ECG Tech.</option>
+       
+                </select>
+              
+                </div>
+           
+          </div>
+        
+        <button id="applybtn" class="btn blue  darken-2 z-depth-0" >Apply</button>
+      </form>
+    </div>
+  </div>
+   
+<!-- content -->
+
+  <div class="container  center">
+    <h5>OOPS!</h5>
+    <p>Currently you can't view this page without a connection.</p>
+    <a href="/index.html" class="btn-small blue z-depth-0">Go to the Homepage</a>
+  </div>
+
+<!-- content end -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-funtions.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCj9GuNL09BagKySNGlQ04ZbiAexUqiglU",
+    authDomain: "alliedhealthservices-fee6a.firebaseapp.com",
+    databaseURL: "https://alliedhealthservices-fee6a-default-rtdb.firebaseio.com",
+    projectId: "alliedhealthservices-fee6a",
+    storageBucket: "alliedhealthservices-fee6a.appspot.com",
+    messagingSenderId: "1005602570512",
+    appId: "1:1005602570512:web:8f80598925daf2ded96595",
+    measurementId: "G-G1MTTJJZFL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+</script>
+                     
+
+
+        <script src="/js/auth.js"></script>
+        <script src="/js/db.js"></script>
+        
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/materialize.min.js"></script>
+    <script src="/js/ui.js"></script>
+ 
+    
+  
+  
+  
+    
+
+    </body>
+
+</html>

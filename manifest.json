@@ -1,0 +1,28 @@
+{
+    "name":"AlliedHealthServicesGujrat",
+    "short_name":"AHSG",
+    "start_url":"/index.html",
+    "background_color":"#2196F3",
+    "theme_color":"#3196F3",
+    "display":"standalone",
+    "icons":[
+        {
+            "src":"images/logo192.png",
+            "sizes":"192x192",
+            "type":"image/png"
+        },
+        {
+            "src":"images/logo512.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        },
+        {
+            "src":"images/PNG/logo9696.png",
+            "sizes":"96x96",
+            "type":"image/png"
+            
+        }
+      
+
+    ]
+}

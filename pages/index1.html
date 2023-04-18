@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html  lang="eng">
+   <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="theme-color" content="#3196F3">
+  <title>AHSG</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="manifest" href="/manifest.json">
+            <!--ios support-->
+  <link rel="apple-touch-icon" href="/images/PNG/logo9696.png">
+  <link rel="icon" 
+      type="image/png" 
+      href="/images/PNG/logo9696.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+  
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+   
+</head>
+    <body>
+
+     <!---Navbar start-->
+
+      <nav class="blue " role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img class="imagelogo" src="/images/Asset 2 1.png"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="/index.html">Home</a></li>
+         <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="logged-out" style="display: none;" ><a href="modal-login"  data-target="modal-login" class="btn-small blue hoverable modal-trigger">Sign In</a></li>
+          <li class="logged-in" style="display: none;" ><a href="#" id="logout" class="btn-small blue hoverable">LogOut</a></li>
+          <li class="logged-out" style="display: none;" ><a href="#"  data-target="modal-paramedic-login" class="btn-small blue hoverable modal-trigger">Paramedic</a></li>
+          <li class="logged-out" style="display: none;" ><a href="/pages/admin.html" data-target="modal-admin-login"   class="btn-small blue hoverable modal-trigger ">Admin</a></li>
+
+<!-- style="display: none;" -->
+      </ul>
+       
+
+      <ul id="nav-mobile" class="blue sidenav">
+       <li><a class="text" href="/index.html" >Home</a></li>
+         <li><a class="text" href="#services" >Services</a></li>
+          <li><a class="text" href="#about">About</a></li>
+          <li class="logged-out" style="display: none;" ><a href="modal-login"   data-target="modal-login" class="btn-small blue hoverable modal-trigger">Sign In</a></li>
+          <li class="logged-in" style="display: none;" ><a href="#" id="logout1"  class="btn-small blue hoverable">LogOut</a></li>
+           <li class="logged-out" style="display: none;" ><a href="#" data-target="modal-paramedic-login"  class="btn-small blue hoverable modal-trigger">Paramedic</a></li>
+            <li class="logged-out" style="display: none;" ><a href="/pages/admin.html" data-target="modal-admin-login"   class="btn-small blue hoverable modal-trigger ">Admin</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+       </nav>
+
+           <!---Navbar End-->
+
+                                
+
+             <!--register btn content   start-->
+
+    
+    <div class="container row  ">
+     
+      <div class="col s12 m6">
+        <h2 > Welcome!</h2>
+        <h4 >Care For Every Patient</h4>
+        <h3>At Your Door Step!</h3>
+
+      </div>
+         <div class="col s12 m6">
+        <img class="imagehealth responsive-img" src="/images/PNG/health2.png">
+
+      </div>
+
+      
+  
+      <div class="row center col s12"> 
+        <a href="/pages/signin.html"   id="download-button" class="btn-large modal-trigger waves-light blue hoverable  ">Book Your Need</a> 
+      
+    </div>
+  </div>     
+
+
+                                         <!--register btn content End-->
+
+
+
+                                      <!-- SIGN UP MODAL -->
+  <div id="modal-signup" class="modal">
+    <div class="modal-content">
+      <h4>Sign up</h4><br />
+      <form id="signup-form">
+        <div class="input-field">
+          <input type="email" id="signup-email" required />
+          <label for="signup-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="signup-password" required />
+          <label for="signup-password">Choose password</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="confirm-password" required />
+          <label data-error="Password not match" data-success="Password Match" for="signup-password">Confirm password</label>
+        </div>
+        <button class="btn blue  darken-2 z-depth-0">Sign up</button>
+      </form>
+    </div>
+  </div>
+
+   <!-- LOGIN MODAL -->
+  <div id="modal-login" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4><br />
+      <form id="login-form">
+        <div class="input-field">
+          <input type="email" id="login-email" required />
+          <label for="login-email">Email address</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="login-password" required />
+          <label for="login-password">Your password</label>
+        </div>
+        <button class="btn blue  darken-2 z-depth-0">Login</button>
+      </form>
+    </div>
+  </div>
+
+                   <!-- AdminLogin MODAL -->
+  <div id="modal-admin-login" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4><br />
+      <form id="login-admin-form">
+        <div class="input-field">
+          <input type="email" id="login-admin-email" placeholder="Email Address" required  />
+          
+        </div>
+        <div class="input-field">
+          <input type="password" id="login-admin-password" placeholder="Password" required />
+          
+        </div>
+        <input type="button" value="Login" id="adminbtn" class="btn blue  ">
+      </form>
+    </div>
+  </div>
+
+
+                    <!-- ParamedicLogin MODAL -->
+ <div id="modal-paramedic-login" class="modal">
+    <div class="modal-content">
+      <h4>Login</h4><br />
+      <form id="login-paramedic-form">
+        <div class="input-field">
+          <input type="email" id="login-email" placeholder="Email Address" required  />
+          
+        </div>
+        <div class="input-field">
+          <input type="password" id="login-password" placeholder="Password" required />
+          
+        </div>
+        <button class="btn blue  darken-2 z-depth-0">Login</button>
+      </form>
+    </div>
+  </div>
+
+
+ 
+
+
+
+                                           <!-- paramedic MODAL -->
+  <div id="modal-paramedic" class="modal">
+    <div class="modal-content">
+      <h4>Paramedic</h4><br />
+      <form id="paramedic-form">
+        <div class="input-field">
+          <input type="text" id="fullnamep" required />
+          <label for="signup-email">Full Name</label>
+        </div>
+        <div class="input-field">
+           <input  type="tel" id="phonenop" name="phone"  placeholder="03**-5678910" pattern="[0-9]{4}-[0-9]{7}" required />
+             <span id="message" style="color: red;"></span>
+          <label for="phone"></label>
+        </div>
+        <div class="input-field">
+          <textarea id="addressp" class="materialize-textarea" required></textarea>
+          <label for="address">Address</label>
+        </div>
+         <div class="row">
+            <div class="input-field col s12">
+         <div class="input-field">
+          
+           <input type="datetime-local" id="datetimep" name="daytime" required />
+         
+             </div>
+            </div>
+          </div>
+         <div class="row">
+              <div class="input-field col s12">
+              <select type="text" id="diploma" >
+      <option value="" disabled selected>select your Diploma</option>
+      <option value="O.T.T">O.T.T</option>
+      <option value="LabTech">Lab Tech.</option>
+      <option value="XrayTech.">Xray Tech.</option>
+        <option value="Dispenser">Dispenser</option>
+      <option value="Dresser">Dresser</option>
+      <option value="Ecg.tech">ECG Tech.</option>
+       
+                </select>
+              
+                </div>
+           
+          </div>
+        
+        <button id="applybtn" data-target="madal5" class="btn blue  darken-2 z-depth-0 modal-trigger" >Apply</button>
+      </form>
+    </div>
+  </div>
+   
+   
+
+
+      
+          <!--section start-->
+               
+   
+       <div class="container">
+    
+       <div id="services" class="row" ><h4 class="col s12 center">Services</h4>
+      </div>
+     
+      <div class="row">
+        <a href="/pages/dressing.html"  class="col s12 m3 modal-trigger"><div class=" card-panel hoverable  ">
+           
+            <img class="dressing responsive-img" src="/images/PNG/]dressing.png">
+            <span class="center">Dressing</span>
+          
+        </div></a>
+
+       <a href="/pages/injection.html"  class="col s12 m3 modal-trigger"> <div class=" card-panel hoverable ">
+          
+            <img class="dressing responsive-img" src="/images/PNG/injectiion.png">
+            <span class="center">Injection</span>
+
+           
+          
+        </div></a>
+
+         <a href="/pages/drip.html"  class="col s12 m3 modal-trigger"><div class=" card-panel hoverable ">
+          
+            <img class="dressing responsive-img" src="/images/PNG/drip.png">
+            <span class="center">Drip</span>
+
+           
+          
+        </div></a>
+
+         <a href="/pages/cannula.html"  class="col s12 m3 modal-trigger"><div class=" card-panel hoverable ">
+          
+            <img class="dressing responsive-img " src="/images/PNG/cannula-filled-outline-icon-vector-31558687.png">
+            <span class="center">Canuula</span>
+       
+        </div></a>
+         </div>
+
+
+
+
+            <div class="row center ">
+           <a href="/pages/stichout.html"  class="col s12 m3 modal-trigger"> <div class=" card-panel hoverable ">
+         
+           <img class=" dressing responsive-img circle" src="/images/PNG/stichout.png">
+            <span class="center">Stichout</span>
+        
+        </div></a>
+
+           <a href="/pages/folley.html"  class="col s12 m3 modal-trigger"> <div class=" card-panel hoverable ">
+          
+            <img class=" dressing responsive-img" src="/images/PNG/folley.png">
+            <span class="center">Folley</span>
+     
+        </div></a>
+
+             <a href="/pages/ftube.html"  class="col s12 m3 modal-trigger"><div class=" card-panel hoverable ">
+          
+               <img class=" dressing responsive-img circle" src="/images/PNG/feedingtube.png">               
+            <span class="center">F.Tube</span>
+        
+        </div></a>
+            <a href="/pages/ncare.html"  class="col s12 m3 modal-trigger"> <div class=" card-panel hoverable ">
+          
+             <img class=" dressing responsive-img" src="/images/PNG/nursingcare.png">
+            <span class="center">N.Care</span>
+        
+        </div></a>
+            </div>
+
+           <div class="row">
+           <a href="/pages/lab.html"  class="col s12 m3"><div class="  card-panel hoverable ">
+          
+            <img class=" dressing responsive-img" src="/images/PNG/labtest.png">
+            <span class="center">LabTest</span>
+        
+        </div></a>
+        </div>
+
+       
+      
+
+    </div>
+    <br><br>
+  </div>
+
+                               <!--paramedics and labs-->
+
+
+<div class="row"><h4 class="col s12 center">Paramedics</h4></div>
+<div class="container">
+  <div class="row">
+    <div class="col s12 m6">
+         <h4>Paramedics of Gujrat city have the 
+oppurtunity to register on our website to enhance their 
+parttime work.They will be notify when someone need 
+their skills for his/her patient.</h4>
+<h5 style="color:brown;">Click Below button to join Us!</h5>
+    </div>
+    <div class="col s12 m6">
+        <img class="imagehealth responsive-img" src="/images/PNG/registration.png">
+    </div>
+
+
+  </div>
+          <li style="padding-left:190px;" ><a href="#"  data-target="modal-paramedic" id="logout" class="btn-small blue hoverable modal-trigger">Paramedic</a></li>
+</div>
+
+                           <!--paramedics and labs registration-->
+    <!-- <div class="row"> 
+           <div class=" center col s6 "> 
+        <a href="#" id="download-button"  class="btn-large  waves-light blue hoverable modal-trigger">Paramedic</a> 
+        
+      
+          </div>
+     
+      
+    </div> -->
+ 
+                          
+                               <!--about us-->
+
+
+<div id="about" class="row" ><h4  class="col s12 center">About Us</h4></div>
+<div class="container">
+  <div class="row">
+    <div class="col s12 m6">
+         <h4>Our aim is to provide all allied health services to patients at 
+their door step so they don’t has to suffer to go back to 
+hospital only to get the prescribed treatment of 
+Doctor. </h4>
+    </div>
+    <div class="col s12 m6">
+        <img class="imagehealth responsive-img" src="/images/PNG/about us.png">
+    </div>
+
+
+  </div>
+
+</div>
+
+
+                          <!--Footer start-->
+
+  <footer class="page-footer blue">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <a id="logo-container" href="#" class="brand-logo"><img class="imagelogo" src="/images/Asset 2 1.png"></a>
+          <br>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Company</h5>
+          <ul>
+            <li><a class="white-text" href="#!">About Us</a></li>
+            <li><a class="white-text" href="/pages/contactus.html">Contact Us</a></li>
+            <li><a class="white-text" href="#!">Services</a></li>
+            
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">HelpfulLinks</h5>
+          <ul>
+            <li><a class="white-text" href="/pages/ourteam.html">Our Team</a></li>
+            <li><a class="white-text" href="/pages//termandcondition.html">Terms&Conditions</a></li>
+            <li><a class="white-text" href="/pages/privacypolicy.html">Privacy Policy</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class=" container">
+      copyright@ <a class="orange-text text-lighten-3" href="http://materializecss.com">AlliedHealthServices2021</a>
+      </div>
+    </div>
+  </footer>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/608439215eb20e09cf3635ae/1f427ubes';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-funtions.js"></script> -->
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCj9GuNL09BagKySNGlQ04ZbiAexUqiglU",
+    authDomain: "alliedhealthservices-fee6a.firebaseapp.com",
+    databaseURL: "https://alliedhealthservices-fee6a-default-rtdb.firebaseio.com",
+    projectId: "alliedhealthservices-fee6a",
+    storageBucket: "alliedhealthservices-fee6a.appspot.com",
+    messagingSenderId: "1005602570512",
+    appId: "1:1005602570512:web:8f80598925daf2ded96595",
+    measurementId: "G-G1MTTJJZFL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+</script>
+                     
+       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+        <script src="/js/auth.js"></script>
+        <script src="/js/db.js"></script>
+         <script src="/js/app.js"></script>
+         <script src="/js/index.js"></script>
+          <script src="/js/ui.js"></script>
+ 
+    
+      <script src="/js/materialize.min.js"></script>
+  
+  
+    
+
+    </body>
+
+</html>

@@ -1,0 +1,87 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+html,body{
+  overflow-x: hidden;
+  font-family: 'Poppins',
+  sans-serif;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+
+
+.imagelogo {
+  padding: 9px 0px 0px 0px;
+  float: left;
+  width: 100px;
+  height: 50px;
+}
+.dressing{
+  width:80px;
+  height:80px;
+}
+.font{
+  font-family: 'Poppins',
+  sans-serif;
+}
+.btn{
+  align-items: center;
+}
+.blue{
+  background-color: #424de6 !important;
+}
+.text{
+  color: white !important;
+}
+.imagehealth{
+  width: 514px;
+  height: 314px;
+}
+.imagehealth2 {
+  width: 450px;
+  height: 350px;
+  /* float: right; */
+}
+.card-panel{
+  border-radius: 12px;
+  height:150px;
+}
+.number{
+  font-weight: bolder;
+  font-size:x-large;
+}
+.saqibimg{
+height: 350px;
+width:250px;
+border-radius: 30%;
+padding-top: 0px;
+
+}
+.card{
+  height:350px;
+  width:250px;
+}
+.junaidimg{
+  height:230px;
+  width:170px;
+  border-radius: 30%;
+  padding-top: 0px;
+}
+
+
